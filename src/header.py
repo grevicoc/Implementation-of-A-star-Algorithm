@@ -96,7 +96,7 @@ def AStarAlgorithm(graphDict, nodeSrc, nodeDst):
                     checkedNodes.append(keyEdge)
 
                     #hitung g(n)
-                    gn = activeNodes[nodeNearest]['f(n)'] - haversineDistance(graphDict[nodeNearest]['coordinate'][0],graphDict[nodeNearest]['coordinate'][1],graphDict[nodeDst]['coordinate'][0],graphDict[nodeDst]['coordinate'][1])
+                    gn = activeNodes[nodeNearest]['f(n)'] - haversineDistance(graphDict[nodeNearest]['coordinate'][0],graphDict[nodeNearest]['coordinate'][1],graphDict[nodeDst]['coordinate'][0],graphDict[nodeDst]['coordinate'][1]) + graphDict[nodeNearest]['edge'][keyEdge]
 
                     #hitung h(n)
                     hn = haversineDistance(graphDict[keyEdge]['coordinate'][0],graphDict[keyEdge]['coordinate'][1],graphDict[nodeDst]['coordinate'][0],graphDict[nodeDst]['coordinate'][1])
@@ -108,8 +108,8 @@ def AStarAlgorithm(graphDict, nodeSrc, nodeDst):
                     activeNodes[keyEdge] = {'f(n)':fn,'jalur':updateJalur}
             del activeNodes[nodeNearest]    #matikan node yang telah membangkitkan tetangganya
     if (foundSolusi):
-        return activeNodes[nodeNearest]['jalur']
+        return activeNodes[nodeNearest]
     else:
-        return []
+        return {}
 
     # return 
