@@ -20,7 +20,7 @@ Program ini dibuat untuk memenuhi tugas kecil IF2211 Strategi Algoritma ITB.
 `pip install matplotlib`
 
  2. Jalankan jupyter notebook dengan menulis `jupyter notebook` pada command line anda 
- 3. Buka file `main.ipynb` di dalam folder src 
+ 3. Buka file `main.ipynb` di dalam folder src pada jupyter notebook anda
  4. Jalankan code yang sudah tersedia di main.ipynb, jika tidak muncul klik jalankan/run sekali lagi. Selamat mencoba! 
 
 ## To-do list:
