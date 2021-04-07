@@ -23,15 +23,17 @@ Program ini dibuat untuk memenuhi tugas kecil IF2211 Strategi Algoritma ITB.
 * jupyter notebook
 
 ## Setup and Run Program
-Pertama-tama install semua library yang dibutuhkan dengan cara
+1. Install semua library yang dibutuhkan dengan cara
 
 `pip3 install jupyter`
 `pip install networkx`
 `pip install matplotlib`
 
-Selanjutnya jalankan jupyter notebook dengan menulis `jupyter notebook` pada command line anda, kemudian buka file `main.ipynb` di dalam folder src. Jalankan code yang sudah tersedia di main.ipynb, jika tidak muncul klik jalankan/run sekali lagi. Selamat mencoba!
+2. Jalankan jupyter notebook dengan menulis `jupyter notebook` pada command line anda 
+3. Buka file `main.ipynb` di dalam folder src 
+4. Jalankan code yang sudah tersedia di main.ipynb, jika tidak muncul klik jalankan/run sekali lagi. Selamat mencoba! 
 
-To-do list:
+##To-do list:
 * Membuat GUI-based program
 * Menghubungkan map secara langsung dengan API
 
